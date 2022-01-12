@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewInstanceDialog</class>
+ <widget class="QDialog" name="NewInstanceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>872</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>מופע קורס</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="locale">
+   <locale language="Hebrew" country="Israel"/>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>10</y>
+     <width>371</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="instanceIdLabel">
+      <property name="text">
+       <string>מספר מופע:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="instanceIdLineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="instanceLecturerLabel">
+      <property name="text">
+       <string>שם מרצה:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="instanceLecturerLineEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="timeTableWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>90</y>
+     <width>641</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>15</number>
+   </property>
+   <property name="columnCount">
+    <number>6</number>
+   </property>
+   <row>
+    <property name="text">
+     <string>8:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>9:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>10:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>11:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>12:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>13:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>14:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>15:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>16:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>17:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>18:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>19:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>20:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>21:00</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>22:00</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>יום א</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>יום ב</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>יום ג</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>יום ד</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>יום ה</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>יום ו</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="insertLabel">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>60</y>
+     <width>421</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>נא הכנס את שמות הכיתות בטבלה, השאר ריק את הזמנים בהם המופע לא מתקיים:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>NewInstanceDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>NewInstanceDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1183</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="locale">
+   <locale language="Hebrew" country="Israel"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="schedulesTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>871</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="schedule1">
+     <attribute name="title">
+      <string>מערכת 1</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>851</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="rowCount">
+       <number>15</number>
+      </property>
+      <property name="columnCount">
+       <number>6</number>
+      </property>
+      <row>
+       <property name="text">
+        <string>8:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>9:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>10:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>11:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>12:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>13:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>14:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>15:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>16:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>17:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>18:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>19:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>20:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>21:00</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>22:00</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>יום א</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>יום ב</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>יום ג</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>יום ד</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>יום ה</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>יום ו</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="addCourseButton">
+    <property name="geometry">
+     <rect>
+      <x>1089</x>
+      <y>30</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>הוסף קורס</string>
+    </property>
+    <property name="icon">
+     <iconset theme="add">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="removeCourseButton">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>30</y>
+      <width>51</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>הסר</string>
+    </property>
+    <property name="icon">
+     <iconset theme="remove">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addInstanceButton">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>30</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>הוסף מופע</string>
+    </property>
+    <property name="icon">
+     <iconset theme="add">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="courseTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>60</y>
+      <width>291</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="columnCount">
+     <number>3</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>75</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="editCourseButton">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>30</y>
+      <width>51</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>ערוך</string>
+    </property>
+    <property name="icon">
+     <iconset theme="edit">
+      <normaloff>.</normaloff>.</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calculateButton">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>590</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>מצא מערכות</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>590</y>
+      <width>31</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>590</y>
+      <width>31</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1183</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
