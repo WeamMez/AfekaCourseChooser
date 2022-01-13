@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>872</width>
-    <height>631</height>
+    <height>700</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>872</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>872</width>
+    <height>700</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>מופע קורס</string>
@@ -23,7 +35,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>590</y>
+     <y>660</y>
      <width>341</width>
      <height>32</height>
     </rect>
@@ -70,10 +82,10 @@
   <widget class="QTableWidget" name="timeTableWidget">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>90</y>
-     <width>641</width>
-     <height>481</height>
+     <x>10</x>
+     <y>120</y>
+     <width>851</width>
+     <height>531</height>
     </rect>
    </property>
    <property name="rowCount">
@@ -191,14 +203,14 @@
   <widget class="QLabel" name="insertLabel">
    <property name="geometry">
     <rect>
-     <x>43</x>
-     <y>60</y>
-     <width>421</width>
+     <x>10</x>
+     <y>90</y>
+     <width>841</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>נא הכנס את שמות הכיתות בטבלה, השאר ריק את הזמנים בהם המופע לא מתקיים:</string>
+    <string>נא הכנס את שמות הכיתות בטבלה, השאר ריקים את הזמנים בהם המופע לא מתקיים:</string>
    </property>
   </widget>
  </widget>
